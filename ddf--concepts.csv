@@ -1,0 +1,21 @@
+concept,name,concept_type
+name,Name,string
+country,Country,entity_domain
+item,Item,entity_domain
+year,Year,time
+total_population_both_sexes,Total Population - Both sexes,measure
+production,Production,measure
+import_quantity,Import Quantity,measure
+stock_variation,Stock Variation,measure
+export_quantity,Export Quantity,measure
+domestic_supply_quantity,Domestic supply quantity,measure
+feed,Feed,measure
+seed,Seed,measure
+waste,Waste,measure
+processing,Processing,measure
+other_uses,Other uses,measure
+food,Food,measure
+food_supply_quantity_kg_capita_yr,Food supply quantity (kg/capita/yr),measure
+food_supply_kcal_capita_day,Food supply (kcal/capita/day),measure
+protein_supply_quantity_g_capita_day,Protein supply quantity (g/capita/day),measure
+fat_supply_quantity_g_capita_day,Fat supply quantity (g/capita/day),measure
