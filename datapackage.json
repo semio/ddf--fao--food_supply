@@ -1,0 +1,456 @@
+{
+    "name": "ddf--fao--food_supply",
+    "language": {
+        "id": "en"
+    },
+    "resources": [
+        {
+            "path": "ddf--concepts.csv",
+            "name": "ddf--concepts",
+            "schema": {
+                "primaryKey": "concept",
+                "fields": [
+                    {
+                        "name": "concept"
+                    },
+                    {
+                        "name": "name"
+                    },
+                    {
+                        "name": "concept_type"
+                    }
+                ]
+            }
+        },
+        {
+            "path": "ddf--datapoints--domestic_supply_quantity--by--country--item--year.csv",
+            "name": "ddf--datapoints--domestic_supply_quantity--by--country--item--year",
+            "schema": {
+                "primaryKey": [
+                    "country",
+                    "item",
+                    "year"
+                ],
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "item"
+                    },
+                    {
+                        "name": "year"
+                    },
+                    {
+                        "name": "domestic_supply_quantity"
+                    }
+                ]
+            }
+        },
+        {
+            "path": "ddf--datapoints--export_quantity--by--country--item--year.csv",
+            "name": "ddf--datapoints--export_quantity--by--country--item--year",
+            "schema": {
+                "primaryKey": [
+                    "country",
+                    "item",
+                    "year"
+                ],
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "item"
+                    },
+                    {
+                        "name": "year"
+                    },
+                    {
+                        "name": "export_quantity"
+                    }
+                ]
+            }
+        },
+        {
+            "path": "ddf--datapoints--fat_supply_quantity_g_capita_day--by--country--item--year.csv",
+            "name": "ddf--datapoints--fat_supply_quantity_g_capita_day--by--country--item--year",
+            "schema": {
+                "primaryKey": [
+                    "country",
+                    "item",
+                    "year"
+                ],
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "item"
+                    },
+                    {
+                        "name": "year"
+                    },
+                    {
+                        "name": "fat_supply_quantity_g_capita_day"
+                    }
+                ]
+            }
+        },
+        {
+            "path": "ddf--datapoints--feed--by--country--item--year.csv",
+            "name": "ddf--datapoints--feed--by--country--item--year",
+            "schema": {
+                "primaryKey": [
+                    "country",
+                    "item",
+                    "year"
+                ],
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "item"
+                    },
+                    {
+                        "name": "year"
+                    },
+                    {
+                        "name": "feed"
+                    }
+                ]
+            }
+        },
+        {
+            "path": "ddf--datapoints--food--by--country--item--year.csv",
+            "name": "ddf--datapoints--food--by--country--item--year",
+            "schema": {
+                "primaryKey": [
+                    "country",
+                    "item",
+                    "year"
+                ],
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "item"
+                    },
+                    {
+                        "name": "year"
+                    },
+                    {
+                        "name": "food"
+                    }
+                ]
+            }
+        },
+        {
+            "path": "ddf--datapoints--food_supply_kcal_capita_day--by--country--item--year.csv",
+            "name": "ddf--datapoints--food_supply_kcal_capita_day--by--country--item--year",
+            "schema": {
+                "primaryKey": [
+                    "country",
+                    "item",
+                    "year"
+                ],
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "item"
+                    },
+                    {
+                        "name": "year"
+                    },
+                    {
+                        "name": "food_supply_kcal_capita_day"
+                    }
+                ]
+            }
+        },
+        {
+            "path": "ddf--datapoints--food_supply_quantity_kg_capita_yr--by--country--item--year.csv",
+            "name": "ddf--datapoints--food_supply_quantity_kg_capita_yr--by--country--item--year",
+            "schema": {
+                "primaryKey": [
+                    "country",
+                    "item",
+                    "year"
+                ],
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "item"
+                    },
+                    {
+                        "name": "year"
+                    },
+                    {
+                        "name": "food_supply_quantity_kg_capita_yr"
+                    }
+                ]
+            }
+        },
+        {
+            "path": "ddf--datapoints--import_quantity--by--country--item--year.csv",
+            "name": "ddf--datapoints--import_quantity--by--country--item--year",
+            "schema": {
+                "primaryKey": [
+                    "country",
+                    "item",
+                    "year"
+                ],
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "item"
+                    },
+                    {
+                        "name": "year"
+                    },
+                    {
+                        "name": "import_quantity"
+                    }
+                ]
+            }
+        },
+        {
+            "path": "ddf--datapoints--other_uses--by--country--item--year.csv",
+            "name": "ddf--datapoints--other_uses--by--country--item--year",
+            "schema": {
+                "primaryKey": [
+                    "country",
+                    "item",
+                    "year"
+                ],
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "item"
+                    },
+                    {
+                        "name": "year"
+                    },
+                    {
+                        "name": "other_uses"
+                    }
+                ]
+            }
+        },
+        {
+            "path": "ddf--datapoints--processing--by--country--item--year.csv",
+            "name": "ddf--datapoints--processing--by--country--item--year",
+            "schema": {
+                "primaryKey": [
+                    "country",
+                    "item",
+                    "year"
+                ],
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "item"
+                    },
+                    {
+                        "name": "year"
+                    },
+                    {
+                        "name": "processing"
+                    }
+                ]
+            }
+        },
+        {
+            "path": "ddf--datapoints--production--by--country--item--year.csv",
+            "name": "ddf--datapoints--production--by--country--item--year",
+            "schema": {
+                "primaryKey": [
+                    "country",
+                    "item",
+                    "year"
+                ],
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "item"
+                    },
+                    {
+                        "name": "year"
+                    },
+                    {
+                        "name": "production"
+                    }
+                ]
+            }
+        },
+        {
+            "path": "ddf--datapoints--protein_supply_quantity_g_capita_day--by--country--item--year.csv",
+            "name": "ddf--datapoints--protein_supply_quantity_g_capita_day--by--country--item--year",
+            "schema": {
+                "primaryKey": [
+                    "country",
+                    "item",
+                    "year"
+                ],
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "item"
+                    },
+                    {
+                        "name": "year"
+                    },
+                    {
+                        "name": "protein_supply_quantity_g_capita_day"
+                    }
+                ]
+            }
+        },
+        {
+            "path": "ddf--datapoints--seed--by--country--item--year.csv",
+            "name": "ddf--datapoints--seed--by--country--item--year",
+            "schema": {
+                "primaryKey": [
+                    "country",
+                    "item",
+                    "year"
+                ],
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "item"
+                    },
+                    {
+                        "name": "year"
+                    },
+                    {
+                        "name": "seed"
+                    }
+                ]
+            }
+        },
+        {
+            "path": "ddf--datapoints--stock_variation--by--country--item--year.csv",
+            "name": "ddf--datapoints--stock_variation--by--country--item--year",
+            "schema": {
+                "primaryKey": [
+                    "country",
+                    "item",
+                    "year"
+                ],
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "item"
+                    },
+                    {
+                        "name": "year"
+                    },
+                    {
+                        "name": "stock_variation"
+                    }
+                ]
+            }
+        },
+        {
+            "path": "ddf--datapoints--total_population_both_sexes--by--country--item--year.csv",
+            "name": "ddf--datapoints--total_population_both_sexes--by--country--item--year",
+            "schema": {
+                "primaryKey": [
+                    "country",
+                    "item",
+                    "year"
+                ],
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "item"
+                    },
+                    {
+                        "name": "year"
+                    },
+                    {
+                        "name": "total_population_both_sexes"
+                    }
+                ]
+            }
+        },
+        {
+            "path": "ddf--datapoints--waste--by--country--item--year.csv",
+            "name": "ddf--datapoints--waste--by--country--item--year",
+            "schema": {
+                "primaryKey": [
+                    "country",
+                    "item",
+                    "year"
+                ],
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "item"
+                    },
+                    {
+                        "name": "year"
+                    },
+                    {
+                        "name": "waste"
+                    }
+                ]
+            }
+        },
+        {
+            "path": "ddf--entities--country.csv",
+            "name": "ddf--entities--country",
+            "schema": {
+                "primaryKey": "country",
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "name"
+                    }
+                ]
+            }
+        },
+        {
+            "path": "ddf--entities--item.csv",
+            "name": "ddf--entities--item",
+            "schema": {
+                "primaryKey": "item",
+                "fields": [
+                    {
+                        "name": "item"
+                    },
+                    {
+                        "name": "name"
+                    }
+                ]
+            }
+        }
+    ]
+}
